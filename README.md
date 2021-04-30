@@ -1,7 +1,5 @@
 # Challenge
 
-
-
 ## How To Participate
 ### Official Website
 * Read the infomation from [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php) carefully.
@@ -15,11 +13,11 @@
 	
 ## Evaluation System
 
-We will provide two stages of the evlatuion, online evluation and offline evluation. The goals of them are different. We use online evluation to measure if the partipants 
+We will provide two stages of the evlatuion on [OpenNetLab](https://opennetlab.org), online evluation and offline evluation. The goals of the evluations are different. Online evluation is for part
 
-* Online evluation:
+* Online evluation: 
 * Offline evluation:
 	
-## Notes
-* Model Upload Limitation
-
+## Contact
+* [Google Group](https://groups.google.com/g/opennetlab-challenge)
+* [Slack](https://join.slack.com/t/opennetlab-challenge/shared_invite/zt-pjn74xhx-d~jG5lY3s4_6kSJHuzfHcw)
