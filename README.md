@@ -1,28 +1,49 @@
 # Challenge
 
 ## How To Participate
+### Read the important information 
+* Read the information from our official website [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php) carefully.
 
-### Official Website
-* Read the infomation from [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php) carefully.
+### Training a model
 
-### Steps
+* You should design an algorithm to predict the bandwidth. We provide a [Gym](https://github.com/OpenNetLab/gym) to you and here is a reinforcement learning [example](https://github.com/OpenNetLab/gym-example) to demonstrate how to design a bandwidth estimator model by the [Gym](https://github.com/OpenNetLab/gym)
 
-1. You should design an algorithm to predict the bandwidth. We provide a [Gym](https://github.com/OpenNetLab/gym) to you and here is a reinforcement learning [example](https://github.com/OpenNetLab/gym-example) to demonstrate how to design a bandwidth estimator model by the [Gym](https://github.com/OpenNetLab/gym).
+### Prepare submission
+#### Model submission
 
-2. You should convert your model or algorithm for [AlphaRTC](https://github.com/OpenNetLab/AlphaRTC) to a [PyInfer](https://github.com/OpenNetLab/AlphaRTC#pyinfer) instance. Here is a tiny [example](https://github.com/OpenNetLab/Challenge-Example) of acceptable submission. Meanwhile, you can verify the validation of your model following [this section](https://github.com/OpenNetLab/Challenge-Example#submission-verification). You implementation will run in the [Challenge-Environment](https://github.com/OpenNetLab/Challenge-Environment) that we pre-installed some popular third-parties library in this environment.
 
-3. You should compress all materials of your bandwidth estimator as a zip package. Here is an valid submission [example](https://github.com/OpenNetLab/Challenge-Example/archive/refs/heads/master.zip).
+* You should convert your model or algorithm for [AlphaRTC](https://github.com/OpenNetLab/AlphaRTC) to a [PyInfer](https://github.com/OpenNetLab/AlphaRTC#pyinfer) instance. Here is a tiny [example](https://github.com/OpenNetLab/Challenge-Example) of acceptable submission. Meanwhile, you can verify the validation of your model following [this section](https://github.com/OpenNetLab/Challenge-Example#submission-verification). You implementation will run in the [Challenge-Environment](https://github.com/OpenNetLab/Challenge-Environment) that we pre-installed some popular third-parties library in this environment.
 
-4. We will dispatch your submission to two nodes of [OpenNetLab](https://opennetlab.org/) platform and configure them to establish a RTP call. Finally, we will collect the output video, output audio and AlphaRTC log as the input to [the evaluation system](https://github.com/OpenNetLab/Challenge-Environment/tree/master/metrics).
+* You should compress all materials of your bandwidth estimator as a zip package. Here is an valid submission [example](https://github.com/OpenNetLab/Challenge-Example/archive/refs/heads/master.zip).
+
+* Submit your materials into our evaluation system. We provide online evaluation 
+
+
+#### Paper submission
+
+Please refer the MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php). 
 
 ## Evaluation System
 
-We will provide two stages of the evlatuion on [OpenNetLab](https://opennetlab.org), online evluation and offline evluation. The goals of the evluations are different.
+We will provide two stages of the evaluation on [OpenNetLab](https://opennetlab.org), online evaluation and offline evaluation. The goals of the evaluations are different.
 
-The online system will just provide a crude score which will not be used as rank but used to tell the contestant the submission is acceptable to our system.
 
-The offline system will be used as rank, it's almost same as the online evaluation system but will add more test cases and complex frame alignment algorithm. It will also be published in this repository about the end of May.
-	
+* Online evaluation
+
+When a participant submit a zip, we check the basic functions of the submissions to ensure every submission can work in the offline evaluation. Each submission is scheduled into one pair of the servers randomly. The scores from the online evaluation are only for references. We limit the submissions for each participant to 3 times each day.
+
+* Offline evaluation
+
+We will start the offline evaluation after the final deadline. All submissions will be tested in different scenarios (e.g. networks and locations). Then we calculate the final cores and rank the submissions. 
+
+
 ## Contact
 * [Google Group](https://groups.google.com/g/opennetlab-challenge)
 * [Slack](https://join.slack.com/t/opennetlab-challenge/shared_invite/zt-pjn74xhx-d~jG5lY3s4_6kSJHuzfHcw)
+
+## Important Resources
+* AlphaRTC: https://github.com/OpenNetLab/AlphaRTC
+* AlphaRTC Gym: https://github.com/OpenNetLab/gym
+* AlphaRTC Gym-example: https://github.com/OpenNetLab/gym-example
+* Challenge Runtime Environment: https://github.com/OpenNetLab/Challenge-Environment
+* Challenge Submission Example: https://github.com/OpenNetLab/Challenge-Example
