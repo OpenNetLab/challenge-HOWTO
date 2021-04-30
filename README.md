@@ -1,4 +1,4 @@
-# Challenge
+# Challenge HOW-TO
 
 ## How To Participate
 ### Read the important information 
@@ -22,7 +22,7 @@
 
 #### Paper submission
 
-Please refer the MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php). 
+Please refer the [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php). 
 
 ## Evaluation System
 
