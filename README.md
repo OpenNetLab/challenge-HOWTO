@@ -39,7 +39,7 @@ Please also read the notes below:
 * We keep this submission for the offline evaluation.
 * Please use the first author's email address to login this system. 
 * A new submission replaces the older one.
-* We limit the submissions for each participant to 3 times each day.
+* We limit the number of submissions for each participant to 3 times per day.
 
 ### Offline evaluation
 
