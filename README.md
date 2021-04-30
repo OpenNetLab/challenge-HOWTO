@@ -1,22 +1,27 @@
 # Challenge
 
 ## How To Participate
+
 ### Official Website
 * Read the infomation from [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php) carefully.
 
-### Important Resources
-* AlphaRTC: https://github.com/OpenNetLab/AlphaRTC
-* AlphaRTC Gym: https://github.com/OpenNetLab/gym
-* AlphaRTC Gym-example: https://github.com/OpenNetLab/gym-example
-* Challenge Runtime Environment: https://github.com/OpenNetLab/Challenge-Environment
-* Challenge Submission Example: https://github.com/OpenNetLab/Challenge-Example
-	
+### Steps
+
+1. You should design an algorithm to predict the bandwidth. We provide a [Gym](https://github.com/OpenNetLab/gym) to you and here is a reinforcement learning [example](https://github.com/OpenNetLab/gym-example) to demonstrate how to design a bandwidth estimator model by the [Gym](https://github.com/OpenNetLab/gym).
+
+2. You should convert your model or algorithm for [AlphaRTC](https://github.com/OpenNetLab/AlphaRTC) to a [PyInfer](https://github.com/OpenNetLab/AlphaRTC#pyinfer) instance. Here is a tiny [example](https://github.com/OpenNetLab/Challenge-Example) of acceptable submission. Meanwhile, you can verify the validation of your model following [this section](https://github.com/OpenNetLab/Challenge-Example#submission-verification). You implementation will run in the [Challenge-Environment](https://github.com/OpenNetLab/Challenge-Environment) that we pre-installed some popular third-parties library in this environment.
+
+3. You should compress all materials of your bandwidth estimator as a zip package. Here is an valid submission [example](https://github.com/OpenNetLab/Challenge-Example/archive/refs/heads/master.zip).
+
+4. We will dispatch your submission to two nodes of [OpenNetLab](https://opennetlab.org/) platform and configure them to establish a RTP call. Finally, we will collect the output video, output audio and AlphaRTC log as the input to [the evaluation system](https://github.com/OpenNetLab/Challenge-Environment/tree/master/metrics).
+
 ## Evaluation System
 
-We will provide two stages of the evlatuion on [OpenNetLab](https://opennetlab.org), online evluation and offline evluation. The goals of the evluations are different. Online evluation is for part
+We will provide two stages of the evlatuion on [OpenNetLab](https://opennetlab.org), online evluation and offline evluation. The goals of the evluations are different.
 
-* Online evluation: 
-* Offline evluation:
+The online system will just provide a crude score which will not be used as rank but used to tell the contestant the submission is acceptable to our system.
+
+The offline system will be used as rank, it's almost same as the online evaluation system but will add more test cases and complex frame alignment algorithm. It will also be published in this repository about the end of May.
 	
 ## Contact
 * [Google Group](https://groups.google.com/g/opennetlab-challenge)
