@@ -4,11 +4,13 @@
 ### Read the important information 
 * Read the information from our official website [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php) carefully.
 
-### Training a model
+### Training your model
 
 * You should design an algorithm to predict the bandwidth. We provide a [Gym](https://github.com/OpenNetLab/gym) to you and here is a reinforcement learning [example](https://github.com/OpenNetLab/gym-example) to demonstrate how to design a bandwidth estimator model by the [Gym](https://github.com/OpenNetLab/gym)
 
-### Prepare submission
+### Prepare your submission
+You should submit your model and paper to participate the challenge. Please refer the [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php). 
+
 #### Model submission
 
 
