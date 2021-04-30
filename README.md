@@ -19,7 +19,6 @@
 * Submit your materials into our evaluation system. We provide online evlaution before the deadline. Please check section [Evaluation System](#evaluation-system)
 
 
-
 #### Paper submission
 
 Please refer the [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php). 
@@ -29,11 +28,18 @@ Please refer the [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php).
 We will provide two stages of the evaluation on [OpenNetLab](https://opennetlab.org), online evaluation and offline evaluation. The goals of the evaluations are different.
 
 
-* Online evaluation
+### Online evaluation
 
-When a participant submit a zip, we check the basic functions of the submissions to ensure every submission can work in the offline evaluation. Each submission is scheduled to one pair of the servers randomly. The scores from the online evaluation are only for references. We limit the submissions for each participant to 3 times each day.
+When a participant submit a zip, we check the basic functions of the submissions to ensure every submission can work in the offline evaluation. Each submission is scheduled to one pair of the servers randomly. The scores from the online evaluation are only for references. 
 
-* Offline evaluation
+Please also read the notes below:
+
+* We keep this submission for the offline evaluation.
+* Please use the first author's email address to login this system. 
+* A new submission replaces the older one.
+* We limit the submissions for each participant to 3 times each day.
+
+### Offline evaluation
 
 We will start the offline evaluation after the final deadline. All submissions will be tested in different scenarios (e.g. networks and locations). Then we calculate the final cores and rank the submissions. 
 
