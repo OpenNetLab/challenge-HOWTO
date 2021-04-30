@@ -16,7 +16,8 @@
 
 * You should compress all materials of your bandwidth estimator as a zip package. Here is an valid submission [example](https://github.com/OpenNetLab/Challenge-Example/archive/refs/heads/master.zip).
 
-* Submit your materials into our evaluation system. We provide online evaluation 
+* Submit your materials into our evaluation system. We provide online evlaution before the deadline. Please check section [Evaluation System](#evaluation-system)
+
 
 
 #### Paper submission
@@ -30,7 +31,7 @@ We will provide two stages of the evaluation on [OpenNetLab](https://opennetlab.
 
 * Online evaluation
 
-When a participant submit a zip, we check the basic functions of the submissions to ensure every submission can work in the offline evaluation. Each submission is scheduled into one pair of the servers randomly. The scores from the online evaluation are only for references. We limit the submissions for each participant to 3 times each day.
+When a participant submit a zip, we check the basic functions of the submissions to ensure every submission can work in the offline evaluation. Each submission is scheduled to one pair of the servers randomly. The scores from the online evaluation are only for references. We limit the submissions for each participant to 3 times each day.
 
 * Offline evaluation
 
