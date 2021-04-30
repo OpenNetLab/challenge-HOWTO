@@ -2,7 +2,10 @@
 
 ## How To Participate
 
-Please refer to our [challenge homepage](https://2021.acmmmsys.org/rtc_challenge.php) for challenge introduction.
+### Official Website
+* Read the infomation from [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php) carefully.
+
+### Steps
 
 1. You should design an algorithm to predict the bandwidth. We provide a [Gym](https://github.com/OpenNetLab/gym) to you and here is a reinforcement learning [example](https://github.com/OpenNetLab/gym-example) to demonstrate how to design a bandwidth estimator model by the [Gym](https://github.com/OpenNetLab/gym).
 
@@ -14,12 +17,12 @@ Please refer to our [challenge homepage](https://2021.acmmmsys.org/rtc_challenge
 
 ## Evaluation System
 
-Actually, we will have two evaluation system, online and offline.
+We will provide two stages of the evlatuion on [OpenNetLab](https://opennetlab.org), online evluation and offline evluation. The goals of the evluations are different.
 
-The online system will just provide a crude score which will not be used as rank but used to tell the contestant the submittal is accepted to our system. This part have been published in the github repository.
+The online system will just provide a crude score which will not be used as rank but used to tell the contestant the submission is acceptable to our system.
 
 The offline system will be used as rank, it's almost same as the online evaluation system but will add more test cases and complex frame alignment algorithm. It will also be published in this repository about the end of May.
-
-## Notes
-* Model Upload Limitation
-
+	
+## Contact
+* [Google Group](https://groups.google.com/g/opennetlab-challenge)
+* [Slack](https://join.slack.com/t/opennetlab-challenge/shared_invite/zt-pjn74xhx-d~jG5lY3s4_6kSJHuzfHcw)
