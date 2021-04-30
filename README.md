@@ -18,12 +18,19 @@ You should submit your model and paper to participate the challenge. Please refe
 
 * You should compress all materials of your bandwidth estimator as a zip package. Here is an valid submission [example](https://github.com/OpenNetLab/Challenge-Example/archive/refs/heads/master.zip).
 
-* Submit your materials into our evaluation system. We provide online evlaution before the deadline. Please check section [Evaluation System](#evaluation-system)
+* Submit your materials into our OpenNetLab platform. We provide online evaluation before the deadline.
+
+##### Notes
+
+* Please use the first author's email address to login this system. 
+* We only store your last submission for evaluation.
+* We limit the number of submissions for each participant to **3** times per day.
 
 
 #### Paper submission
 
 Please refer the [MMSys Website](https://2021.acmmmsys.org/rtc_challenge.php). 
+
 
 ## Evaluation System
 
@@ -34,12 +41,6 @@ We will provide two stages of the evaluation on [OpenNetLab](https://opennetlab.
 
 When a participant submit a zip, we check the basic functions of the submissions to ensure every submission can work in the offline evaluation. Each submission is scheduled to one pair of the servers randomly. The scores from the online evaluation are only for references. 
 
-Please also read the notes below:
-
-* We keep this submission for the offline evaluation.
-* Please use the first author's email address to login this system. 
-* A new submission replaces the older one.
-* We limit the number of submissions for each participant to 3 times per day.
 
 ### Offline evaluation
 
