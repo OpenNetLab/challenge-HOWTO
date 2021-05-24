@@ -49,7 +49,7 @@ We will start the offline evaluation after the final deadline. All submissions w
 
 ## Contact
 * [Google Group](https://groups.google.com/g/opennetlab-challenge)
-* [Slack](https://join.slack.com/t/opennetlab-challenge/shared_invite/zt-pjn74xhx-d~jG5lY3s4_6kSJHuzfHcw)
+* [Slack](https://acmmmsys.slack.com/archives/C022NJ37G4T)
 
 ## Important Resources
 * AlphaRTC: https://github.com/OpenNetLab/AlphaRTC
