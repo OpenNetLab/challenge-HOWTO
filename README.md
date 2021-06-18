@@ -62,13 +62,15 @@ The different parts of score can be calculated by the method below :
 
 For each part of the network score, they can be calculated as follows :
 
-- delay_score = 100 * (max_delay - delay_95th) / (max_delay – min_one_way_delay)
+- delay_score = max(0, 100 * (max_delay - delay_95th) / (max_delay – min_one_way_delay))
 - receive_rate_score = 100 * recv_rate / ground_truth
 - loss_score = 100 * (1 - loss_rate) 
 
-What we should notice is that some parts of score still can not get full marks in an ideal environment. For example, audio_score and receive_rate_score. So we set the ground_truth to scale the related parts of score, which provide the score that can be obtained in an ideal environment.
+The **ground_truth** means the correspond score that can be obtained in an ideal environment (like no loss, high capacity). We use the score of ground_truth as the full marks. 
 
-To tune the model, we ran multiple experiments in NetEm to test the performance of simple bandwidth estimator algorithms. The experiments lead us to set the coefficients as follows :
+The **binarize_bound** means the bound that can get a full mark if the score exceeds binarize_bound times of ground_truth. Otherwise it will be 0.
+
+To tune the model, we ran multiple experiments to test the performance of different bandwidth estimator algorithms. The experiments lead us to set the coefficients as follows :
 
 ```
 w1, w2, w3, w4, w5 = 0.2, 0.1, 0.2, 0.2, 0.3
