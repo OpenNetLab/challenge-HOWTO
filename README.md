@@ -56,7 +56,7 @@ final_score = w1 * video_score + w2 * audio_score + network_score
 
 The different parts of score can be calculated by the method below :
 
-- video_score = Vmaf score
+- video_score = 100 * Vmaf score / ground_truth
 - audio_score = 100 if DNSMOS score > ground_truth * binarize_bound else 0
 - network_score = w3 * delay_score + w4 * receive_rate_score + w5 * loss_score
 
