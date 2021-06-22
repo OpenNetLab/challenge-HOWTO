@@ -46,6 +46,36 @@ When a participant submit a zip, we check the basic functions of the submissions
 
 We will start the offline evaluation after the final deadline. All submissions will be tested in different scenarios (e.g. networks and locations). Then we calculate the final cores and rank the submissions. 
 
+## Final Score
+
+The final score is divided into three parts video , audio and network. The specific formula is as follows :
+
+```
+final_score = w1 * video_score + w2 * audio_score + network_score
+```
+
+The different parts of score can be calculated by the method below :
+
+- video_score = 100 * Vmaf score / ground_truth
+- audio_score = 100 if DNSMOS score > ground_truth * binarize_bound else 0
+- network_score = w3 * delay_score + w4 * receive_rate_score + w5 * loss_score
+
+For each part of the network score, they can be calculated as follows :
+
+- delay_score = max(0, 100 * (max_delay - delay_95th) / (max_delay – min_one_way_delay))
+- receive_rate_score = 100 * recv_rate / ground_truth
+- loss_score = 100 * (1 - loss_rate) 
+
+The **ground_truth** means the correspond score that can be obtained in an ideal environment (like no loss, high capacity). We use the score of ground_truth as the full marks. 
+
+The **binarize_bound** means the bound that can get a full mark if the score exceeds binarize_bound times of ground_truth. Otherwise it will be 0.
+
+To tune the model, we ran multiple experiments to test the performance of different bandwidth estimator algorithms. The experiments lead us to set the coefficients as follows :
+
+```
+w1, w2, w3, w4, w5 = 0.2, 0.1, 0.2, 0.2, 0.3
+```
+
 
 ## Contact
 * [Google Group](https://groups.google.com/g/opennetlab-challenge)
